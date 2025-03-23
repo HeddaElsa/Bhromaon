@@ -50,3 +50,24 @@
     background-color: #243ca8;
     transition: all 0.4s ease-in;
 }
+
+.whysection__imagebox {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
+    max-height: 450px;
+    margin-right: 12%;
+}
+
+.whysection__house {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.whysection__mountain {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
