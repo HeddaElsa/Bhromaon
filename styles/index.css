@@ -448,16 +448,6 @@ p {
             flex-direction: column;
   }
 }
-@media screen and (max-width: 700px) {
-  .whysection__content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 @media screen and (max-width: 3000px) {
   .whysection_content {
     display: -webkit-box;
@@ -503,6 +493,13 @@ p {
   gap: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .whysection__text {
+    max-height: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
 .whysection__button {
   background-color: #5474FD;
   border: none;
@@ -590,6 +587,7 @@ p {
 @media screen and (max-width: 700px) {
   .howsection {
     height: 500px;
+    padding: 5%;
   }
 }
 .howsection__container {
@@ -619,6 +617,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
+    max-height: none;
     gap: 5%;
   }
 }
@@ -701,11 +700,22 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10%;
 }
 
+@media screen and (max-width: 800px) {
+  .hotelsection {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: none;
+  }
+}
 .hotelsection__text {
-  width: 543px;
-  height: 374px;
+  max-width: 543px;
+  width: 100%;
+  max-height: 374px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,6 +736,13 @@ p {
   gap: 13px;
 }
 
+@media screen and (max-width: 800px) {
+  .hotelsection__text {
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
 .bookingsection__button {
   background-color: #5474FD;
   border: none;
@@ -768,11 +785,22 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10%;
 }
 
+@media screen and (max-width: 800px) {
+  .islandsection {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: none;
+  }
+}
 .islandsection__text {
-  width: 543px;
-  height: 374px;
+  max-width: 543px;
+  width: 100%;
+  max-height: 374px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,9 +808,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: self-start;
-      -ms-flex-align: self-start;
-          align-items: self-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -793,6 +821,13 @@ p {
   gap: 13px;
 }
 
+@media screen and (max-width: 800px) {
+  .islandsection__text {
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
 .testemonial {
   background-image: url("../images/backgroundfive.png");
   background-size: cover;
@@ -814,6 +849,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5.5rem;
+  padding: 10%;
 }
 
 .testemonial__box {
@@ -832,6 +868,14 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .testemonial__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .testemonial__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,6 +901,13 @@ p {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 1000px) {
+  .testemonial__text {
+    max-width: 445px;
+    width: 100%;
+    max-height: none;
+  }
+}
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
