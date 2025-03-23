@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #5474FD;
+    height: 83px;
+    padding-left: 12%;
+    padding-right: 12%;
+    box-sizing: border-box;
+}
+
+.nav__nav--list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 29px;
+    color: #FFFFFF;
+}
+
+.nav__nav--element:hover {
+    color: #101b4a;
+    transition: all 0.4s ease-in;
+}

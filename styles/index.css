@@ -46,6 +46,27 @@ h6 {
   color: #FFFFFF;
 }
 
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.nav__nav {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 26px;
+}
+
 .header {
   background-image: url("../images/backgroundone.png");
   width: 100%;
@@ -212,4 +233,46 @@ h6 {
 .header__arrow {
   width: 17px;
   height: 11px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #5474FD;
+  height: 83px;
+  padding-left: 12%;
+  padding-right: 12%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav__nav--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  gap: 29px;
+  color: #FFFFFF;
+}
+
+.nav__nav--element:hover {
+  color: #101b4a;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
