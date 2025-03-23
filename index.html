@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -41,7 +42,7 @@
             </div>
         </div>
 
-        <div class="nav">
+        <!-- <div class="nav">
             <div class="nav__logo">
                 <h3>BHROMAON</h3>
             </div>
@@ -53,7 +54,33 @@
                     <li class="nav__nav--element">CONTACT US</li>
                 </ul>
             </div>
+        </div> -->
+
+        <div class="nav">
+            <div class="nav__logo">
+                <h3>BHROMAON</h3>
+            </div>
+            <div class="nav__nav" id="mynav">
+                <a href="#who" >WHO WE ARE</a>
+                <a href="#what">WHAT WE DO</a>
+                <a href="#travel">TRAVEL WITH US</a>  
+                <a href="#contac">CONTACT US</a>      
+                <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i> 
+                </a>
+            </div>
         </div>
+
+        <script>
+            function burgerMenu() {
+                let burger = document.getElementById("mynav");
+                if (burger.className === "nav") {
+                burger.className += " responsive";
+                } else {
+                burger.className = "nav";
+                }
+            }
+        </script>
 
         <div class="whysection">
             <div class="whysection_content">

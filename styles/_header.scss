@@ -10,6 +10,15 @@
     align-items: center;
     justify-content: center;
     gap: 48px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header__formcontainer {
