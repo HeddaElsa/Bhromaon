@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
 }
 
@@ -19,17 +19,6 @@
         flex-direction: column;
     }
 }
-
-// .whysection_content {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//     gap: 50px;
-//     margin-left: 12%;
-//     max-width: 560px;
-//     width: 100%;
-// }
 
 @media screen and (max-width: 3000px) {
     .whysection_content {
@@ -98,21 +87,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 }
-
-// @media screen and (max-width: 450px) {
-//     .whysection__imagebox {
-//         display: none;
-//     }
-// }
-
-// .whysection__house {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
 
 @media screen and (max-width: 3000px) {
     .whysection__house {
@@ -127,12 +104,6 @@
         position: relative;
     }
 }
-
-// .whysection__mountain {
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-// }
 
 @media screen and (max-width: 3000px) {
     .whysection__mountain {

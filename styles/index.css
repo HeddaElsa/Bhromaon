@@ -233,6 +233,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 10px;
   }
 }
 .form__input {
@@ -246,9 +247,11 @@ p {
     max-width: 320px;
     width: 100%;
     background-color: #FFFFFF;
-    padding: 2%;
+    padding: 5%;
     text-align: center;
     margin: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 .header__button {
@@ -470,7 +473,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
@@ -576,7 +579,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 3000px) {
@@ -900,6 +903,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -940,6 +944,7 @@ p {
     max-width: 445px;
     width: 100%;
     max-height: none;
+    padding: 2rem;
   }
 }
 .footer {
@@ -999,4 +1004,8 @@ p {
 .social {
   width: 30px;
   height: 30px;
+}
+
+.linkedin {
+  fill: blue;
 }
