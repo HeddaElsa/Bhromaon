@@ -204,6 +204,13 @@ p {
   padding: 2px;
 }
 
+@media screen and (max-width: 800px) {
+  .header__formcontainer {
+    max-width: 320px;
+    width: 100%;
+    background-color: transparent;
+  }
+}
 .header__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,12 +227,30 @@ p {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  .header__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .form__input {
   margin-left: 20%;
   border: none;
   width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+  .form__input {
+    max-width: 320px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 2%;
+    text-align: center;
+    margin: 0px;
+  }
+}
 .header__button {
   background-color: #5474FD;
   color: #FFFFFF;
@@ -376,10 +401,11 @@ p {
 
 .nav .icon {
   display: none;
+  color: #FFFFFF;
 }
 
-@media screen and (max-width: 900px) {
-  .nav a:not(:first-child) {
+@media screen and (max-width: 1000px) {
+  .nav a {
     display: none;
   }
   .nav a.icon {
@@ -387,7 +413,7 @@ p {
     display: block;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .nav.responsive {
     position: relative;
     display: -webkit-box;
@@ -407,10 +433,18 @@ p {
     float: none;
     display: block;
     text-align: left;
+    background-color: #101b4a;
+    width: 200px;
   }
 }
 .nav a:hover {
   color: #101b4a;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.nav.responsive a:hover {
+  color: #333333;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
@@ -584,7 +618,7 @@ p {
           align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .howsection {
     height: 500px;
     padding: 5%;
@@ -610,7 +644,7 @@ p {
   height: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .howsection__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -670,7 +704,7 @@ p {
   left: 90px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .howsection__bow {
     display: none;
   }
